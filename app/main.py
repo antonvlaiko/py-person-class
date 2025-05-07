@@ -8,6 +8,7 @@ class Person:
 
 
 def create_person_list(people: list) -> list:
+    Person.people.clear()
     instances = []
     for person in people:
         new_person = Person(person["name"], person["age"])
